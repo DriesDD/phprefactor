@@ -1,7 +1,8 @@
 <?php
 
 function orderPizza($pizzaType, $Customer)
-{   $Customer = ucfirst($Customer);
+{
+    $Customer = ucfirst($Customer);
     $Address = getAddress($Customer);
     $Price = getPrice($pizzaType);
 
@@ -11,7 +12,6 @@ function orderPizza($pizzaType, $Customer)
     echo "The bill is €{$Price}.<br>";
     echo "Order finished.<br><br>";
 }
-
 
 function getAddress($Customer)
 {
