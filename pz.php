@@ -18,16 +18,12 @@ function getAddress($Customer)
     switch ($Customer) {
         case 'Koen':
             return 'a yacht in Antwerp';
-            break;
         case 'Manuele':
             return 'somewhere in Belgium';
-            break;
         case 'Students':
             return 'BeCode office';
-            break;
         default:
             return 'unknown';
-            break;
     }
 }
 
@@ -35,22 +31,16 @@ function getPrice($pizzaType)
 {
     switch ($pizzaType) {
         case 'marguerita':
-            $Price = '5';
-            break;
+            return '5';
         case 'golden':
-            $Price = '100';
-            break;
+            return '100';
         case 'calzone':
-            $Price = '10';
-            break;
+            return '10';
         case 'hawaii':
             throw new Exception('Computer says no');
-            break;
         default:
-            $Price = 'unknown';
-            break;
+            return 'unknown';
     }
-    return $Price;
 }
 
 (function () {
